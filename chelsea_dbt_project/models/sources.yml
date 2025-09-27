@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public # your raw schema (since you created them in public)
+    tables:
+      - name: chelsea_matches
+      - name: chelsea_team_details
+      - name: chelsea_players
+      - name: competition_details
+      - name: premier_league_standings
+      - name: champions_league_standings
