@@ -1,0 +1,90 @@
+
+
+import streamlit as st import pandas as pd import plotly.express as px import plotly.graph_objects as go from datetime import datetime, timedelta import psycopg2 from dotenv import load_dotenv from psycopg2 import extras import os from os import environ as ENV import numpy as np # Page
+
+pasted
+
+this is my streamlit dashboard, looking at chelsea fc information:
+please refactor it, so it follows best practices, with pages as seperate files, and maybe seperate files for database functions, graphs, and another other useful repeated functions
+
+I'll help you refactor your Streamlit dashboard to follow best practices with a modular structure. Let me create a well-organized project structure with separate files for different concerns.
+
+Project Structure
+Code 
+Now let me create the refactored code files:
+
+main.py - Main Application
+Code 
+Continue
+
+components/tables.py - Table Components
+Code ∙ Version 2 
+Now let me create the individual page files:
+
+pages/overview.py - Overview Page
+Code 
+I've successfully refactored your Chelsea FC Streamlit dashboard following best practices with a modular architecture. Here's what I've created:
+
+🏗️ Refactored Structure
+Core Benefits:
+Separation of Concerns: Each module has a specific responsibility
+Maintainability: Easy to modify individual components without affecting others
+Reusability: Components can be used across different pages
+Scalability: Simple to add new features or pages
+Testability: Modular structure makes testing straightforward
+Key Improvements:
+📁 Modular Organization:
+
+Pages: Each page is now a separate module (overview.py, standings.py, etc.)
+Components: Reusable UI components for charts, metrics, and tables
+Database Layer: Centralized data management with caching
+Configuration: All settings in one place
+Utilities: Common functions for data processing and styling
+🔧 Enhanced Features:
+
+DataManager Class: Handles all database operations with proper caching
+Component Library: Reusable chart, metric, and table components
+Configuration Management: Centralized settings and color schemes
+Error Handling: Better error management throughout
+Performance: Optimized data loading and caching
+📊 Clean Code Practices:
+
+Single Responsibility: Each function/class has one clear purpose
+DRY Principle: No repeated code
+Consistent Naming: Clear, descriptive names throughout
+Type Safety: Better data handling with pandas
+Documentation: Comprehensive docstrings and README
+How to Use:
+Replace your current file with the new main.py
+Create the folder structure as shown
+Copy each module into its respective location
+Install dependencies from requirements.txt
+Update your .env file with database credentials
+Adding New Features:
+New Page:
+
+python
+# pages/new_page.py
+def show_page(data):
+    st.subheader("New Page")
+    # Your page logic here
+New Component:
+
+python
+# components/charts.py
+def create_new_chart(data):
+    # Chart creation logic
+    return fig
+This refactored version maintains all your original functionality while making the codebase much more maintainable, scalable, and professional. Each component can now be developed, tested, and modified independently!
+
+
+
+
+
+
+streamlit==1.29.0
+pandas==2.1.4
+plotly==5.17.0
+psycopg2-binary==2.9.9
+python-dotenv==1.0.0
+numpy==1.25.2

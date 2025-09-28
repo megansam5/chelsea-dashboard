@@ -53,6 +53,8 @@ def insert_data_to_db():
     with conn.cursor() as cursor:
         for csv_file, table in tables.items():
             file_path = os.path.join(csv_path, csv_file)
+            print(f'truncating {table}')
+            cursor.execute(f'truncate table {table};')
             print(f"Loading {file_path} into {table}...")
 
             with open(file_path, "r", encoding="utf-8") as f:
