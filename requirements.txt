@@ -3,3 +3,4 @@ psycopg2
 dbt-core 
 dbt-postgres
 streamlit
+plotly
