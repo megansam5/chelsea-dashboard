@@ -9,9 +9,10 @@ The project is designed to be deployed on the cloud using AWS services via terra
 - **AWS ECR** repository for the daily extraction image
 - Provision an **AWS RDS (PostgreSQL)** instance to host database
 - Provision an **AWS S3** bucket
-- Read the Prequrequisites and Setup section of the following READMEs (setup and upload images to ECR repositories):
-  1. [extracting/README.md](../extracting/README.md)
-- Read [database/README.md](../database/README.md) and [chelsea_dbt_project/README.md](../chelsea_dbt_project/README.md) to initalise the database
+- Read the Prequrequisites and Setup section of the following READMEs:
+  1. [database/README.md](../database/README.md)
+  2. [chelsea_dbt_project/README.md](../chelsea_dbt_project/README.md)
+  3. [extracting/README.md](../extracting/README.md)
 
 ## ⚙️ Setup
 
@@ -28,7 +29,7 @@ The project is designed to be deployed on the cloud using AWS services via terra
    ```bash
    # AWS Credentials
    AWS_ACCESS_KEY        = "your-aws-access-key"
-   AWS_SECRET_ACCESS_KEY = "your-aws-secret-key"
+   AWS_SECRET_KEY = "your-aws-secret-key"
 
    # AWS Region and Network Config
    REGION                = "the-aws-region"

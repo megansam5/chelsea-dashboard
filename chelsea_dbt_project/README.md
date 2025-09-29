@@ -5,17 +5,21 @@ This folder contains the **dbt project** for transforming and modeling data on t
 ## 📋 Overview
 
 The dbt project builds **staging** and **mart** models on the PostgreSQL database hosted on an AWS RDS instance.  
-It assumes that the database schema has already been created and seeded using the instructions in the [`database`](../database) folder.
+It assumes that the database schema has already been created using the instructions in the [`database`](../database) folder.
 
 ## 🛠️ Prerequisites
 
-- **AWS RDS (PostgreSQL)** database running.
-- Database initialized and seeded as described in the [`database`](../database) folder.
+- **PostgreSQL** database running locally.
+- Database initialized described in the [`database`](../database) folder.
 - [dbt](https://docs.getdbt.com/docs/get-started/installation) installed (via pip or Homebrew).
+
+Optional:
+
+- **AWS RDS (PostgreSQL)** database running.
 
 ## ⚙️ Setup
 
-1. Ensure the `.env` file is already set up in the project root with the following variables (as defined in the database setup):
+1. Create a `.env` file and fill with the following variables (as defined in the database setup):
 
    ```env
    # Database Configuration
@@ -46,7 +50,7 @@ It assumes that the database schema has already been created and seeded using th
          user: "{{ env_var('DB_USER') }}"
          password: "{{ env_var('DB_PASSWORD') }}"
          dbname: "{{ env_var('DB_NAME') }}"
-         schema: public
+         schema: analytics
    ```
 
 3. Test the connection:

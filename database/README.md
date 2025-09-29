@@ -4,10 +4,12 @@ This folder contains the schema and python script to create the tables in the da
 
 ## 📋 Overview
 
-The database created is a PostgreSQL database, hosted on an AWS RDS instance.
+The database created is a PostgreSQL database, which can be ran locally or hosted on an AWS RDS instance.
 
 ## 🛠️ Prerequisites
 
+- **PostgreSQL** database running locally.
+  Optional:
 - **AWS RDS (PostgreSQL)** database running.
 
 ## ⚙️ Setup
