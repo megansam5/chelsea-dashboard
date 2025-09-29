@@ -12,7 +12,7 @@ It demonstrates key skills in:
 - **Data visualisation** (Streamlit, AWS EC2)
 - **Infrastructure as code** (Terraform, Docker, AWS)
 
-The final product is a **Streamlit dashboard** that provides interactive insights into Chelsea’s matches, squad, standings, and performance trends.
+The final product is a **Streamlit dashboard** that provides interactive insights into Chelsea’s matches, squad, standings, and performance trends, with **daily extraction** so data is up to date.
 
 ## 🚀 Features
 

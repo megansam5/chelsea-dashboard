@@ -23,7 +23,7 @@ The dashboard provides interactive insights into Chelsea FC’s matches, standin
 
 - **Python** installed
 
-OPtions (for pushing to cloud):
+Optional (for pushing to cloud):
 
 - **EC2** deployed from running [Terraform](../terraform/README.md)
 - **PEM Key** generated from running [Terraform](../terraform/README.md)

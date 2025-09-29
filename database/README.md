@@ -1,6 +1,6 @@
 # 🗄️ The Database
 
-This folder contains the schema and python script to create the tables in the database.
+This folder contains the schema and script to create the tables in the database.
 
 ## 📋 Overview
 
@@ -9,7 +9,9 @@ The database created is a PostgreSQL database, which can be ran locally or hoste
 ## 🛠️ Prerequisites
 
 - **PostgreSQL** database running locally.
-  Optional:
+
+Optional:
+
 - **AWS RDS (PostgreSQL)** database running.
 
 ## ⚙️ Setup
@@ -23,13 +25,8 @@ The database created is a PostgreSQL database, which can be ran locally or hoste
    DB_USER=<the-RDS-username>
    DB_PASSWORD=<the-RDS-password>
    ```
-2. Initialise and seed the database using:
+2. Initialise and the database using:
    ```bash
    bash create_db.sh
    ```
    This will initialise the database according to the schema.sql file.
-
-## 📁 Files
-
-- `schema.sql` defines the database schema and static data using SQL.
-- `create_db.sh` is used to create the tables in the database.
