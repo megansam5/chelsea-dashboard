@@ -1,6 +1,6 @@
 # 🗄️ The Database
 
-This folder contains the schema and python script to seed the database with initial static data as well as the option to insert dummy data.
+This folder contains the schema and python script to create the tables in the database.
 
 ## 📋 Overview
 
