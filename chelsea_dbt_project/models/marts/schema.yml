@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: mart_chelsea_matches
+    description: "Enriched Chelsea match data with opponent, venue, and result classification."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ["match_id"]
+      - dbt_utils.not_null_proportion:
+          column_name: "match_date"
+          at_least: 0.99
+    columns:
+      - name: venue_type
+        tests:
+          - accepted_values:
+              values: ["Home", "Away", "Unknown"]
+      - name: result
+        tests:
+          - accepted_values:
+              values: ["Win", "Draw", "Loss", "Not Played"]
+
+  - name: mart_chelsea_overview
+    description: "Chelsea team overview including league standings and metadata."
+    tests:
+      - dbt_utils.not_null_proportion:
+          column_name: "team_id"
+          at_least: 1.0
+    columns:
+      - name: team_name
+        tests:
+          - accepted_values:
+              values: ["Chelsea FC"]
+
+  - name: mart_chelsea_players
+    description: "Chelsea squad details enriched with age and position category."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ["player_id"]
+      - dbt_utils.not_null_proportion:
+          column_name: "player_name"
+          at_least: 1.0
+    columns:
+      - name: position_category
+        tests:
+          - accepted_values:
+              values: ["GK", "DEF", "MID", "ATT", "UNKNOWN"]
+
+  - name: mart_competition_standings
+    description: "Unified Premier League and Champions League standings."
+    tests:
+      - dbt_utils.not_null_proportion:
+          column_name: "team_id"
+          at_least: 0.99
+    columns:
+      - name: competition
+        tests:
+          - accepted_values:
+              values: ["Premier League", "Champions League"]
+
+  - name: mart_match_performance
+    description: "Aggregated Chelsea performance per competition."
+    tests:
+      - dbt_utils.not_null_proportion:
+          column_name: "competition_name"
+          at_least: 1.0
+    columns:
+      - name: points_percentage
+        tests:
+          - relationships:
+              to: ref('mart_chelsea_matches')
+              field: competition_name
