@@ -1,4 +1,4 @@
-from extracting.helperFunction import wrappedRequest
+from helperFunction import wrappedRequest
 from dotenv import load_dotenv
 from os import environ as ENV
 import os

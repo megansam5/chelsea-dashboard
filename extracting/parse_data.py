@@ -1,7 +1,7 @@
 import os
 import json
 import collections
-from extracting.helperFunction import writeData2CSV
+from helperFunction import writeData2CSV
 
 json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "json_files/")
 csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "csv_files/")

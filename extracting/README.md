@@ -88,3 +88,11 @@ To deploy the overall cloud infrastructure the daily extractor must be container
    - Create the docker image
    - Tag the docker image
    - Upload tagged image to the ECR repository
+
+### ✅ Testing
+
+To generate a detailed test report:
+
+```bash
+pytest -vv
+```
