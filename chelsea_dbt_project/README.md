@@ -64,7 +64,16 @@ Optional:
    dbt run
    ```
 
+### ✅ Testing
+
+To run the dbt tests:
+
+```bash
+dbt test
+```
+
 ## 📁 Project Structure
 
 - `models/staging/` contains staging models that clean and structure raw data.
 - `models/marts/` contains mart models used for analytics and reporting.
+- `tests/` contains all the dbt tests.
