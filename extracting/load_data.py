@@ -41,7 +41,9 @@ def insert_data_to_db():
         "ChelseaTeamDetails.csv": "chelsea_team_details"
     }
 
-    csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "csv_files")
+    csv_path = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "csv_files")
     
 
     with conn.cursor() as cursor:

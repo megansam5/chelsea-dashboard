@@ -1,4 +1,4 @@
-"""File that holds the main lambda handler function for the Fox News scraper."""
+"""File that holds the main lambda handler function for the cloud pipeline."""
 
 from dotenv import load_dotenv
 from os import environ as ENV

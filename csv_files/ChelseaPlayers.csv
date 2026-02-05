@@ -2,10 +2,15 @@ PLAYER_ID,PLAYER_NAME,PLAYER_POSITION,PLAYER_DOB,PLAYER_NATIONALITY
 135555,Robert Sánchez,Goalkeeper,1997-11-18,Spain
 137544,Gabriel Slonina,Goalkeeper,2004-05-15,USA
 153828,Filip Jörgensen,Goalkeeper,2002-04-16,Denmark
-246743,Ted Curd,Goalkeeper,2006-02-14,England
+175910,Teddy Sharman-Lowe,Goalkeeper,2003-01-19,England
+246715,Max Merrick,Goalkeeper,2005-11-10,England
+277888,Landon Emenalo,Defence,2008-01-18,USA
 276866,Reggie Walsh,Midfield,2008-10-20,England
-244778,Estevao,Offence,2006-04-24,Brazil
+292184,Charlie Holland,Midfield,2009-07-03,England
+244778,Estevao,Offence,2007-04-24,Brazil
 272058,Shumaira Mheuka,Offence,2007-10-20,England
+287945,Ryan Kavuma-McQueen,Offence,2009-01-01,England
+165314,Dario Essugo,Defensive Midfield,2005-03-14,Portugal
 152498,Malo Gusto,Right-Back,2003-05-19,France
 151095,Liam Delap,Centre-Forward,2003-02-08,England
 144892,Cole Palmer,Attacking Midfield,2002-05-06,England
@@ -18,19 +23,14 @@ PLAYER_ID,PLAYER_NAME,PLAYER_POSITION,PLAYER_DOB,PLAYER_NATIONALITY
 8545,Wesley Fofana,Centre-Back,2000-12-17,France
 7880,Tosin Adarabioyo,Centre-Back,1997-09-24,England
 7810,Trevoh Chalobah,Centre-Back,1999-07-05,England
-3329,Raheem Sterling,Right Winger,1994-12-08,England
 2074,Pedro Neto,Right Winger,2000-03-09,Portugal
-813,Axel Disasi,Centre-Back,1998-03-11,France
-250436,Tyrique George,Left Winger,2006-02-04,England
 249320,Josh Acheampong,Right-Back,2006-05-05,England
 247243,Ollie Harrison,Defensive Midfield,2007-08-07,England
 207109,Marc Guiu,Centre-Forward,2006-01-04,Spain
 189477,Jorrel Hato,Centre-Back,2006-03-07,Netherlands
-184273,Facundo Buonanotte,Attacking Midfield,2004-12-23,Argentina
 181901,Alejandro Garnacho,Left Winger,2004-07-01,Argentina
 179460,Jamie Bynoe-Gittens,Left Winger,2004-08-08,England
 172738,Romeo Lavia,Defensive Midfield,2004-01-06,Belgium
 170440,Levi Colwill,Centre-Back,2003-02-26,England
 170426,Benoît Badiashile,Centre-Back,2001-03-26,France
 166366,Andrey Santos,Central Midfield,2004-05-03,Brazil
-165314,Dario Essugo,Defensive Midfield,2005-03-14,Portugal
