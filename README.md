@@ -1,4 +1,4 @@
-# 📡 Chelsea Data Dashboard
+# ⚽ Chelsea Data Dashboard
 
 ## 📋 Overview
 
